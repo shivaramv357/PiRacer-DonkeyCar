@@ -58,10 +58,15 @@ For more details, refer to the Calibration section in the official documentation
       
 ### 🏋️ Data Transfer & Training
 - Transfer dataset from PiRacer to Mac:
+
     rsync -rv --progress --partial piracer@<your_pi_ip_address>:~/mycar/data/ ~/mycar/data/
+  
 - Train the model:
+  
     python train.py --tub <tub_folder_names_comma_separated> --model models/mypilot.h5
+  
 - Transfer trained model back to PiRacer:
+  
     rsync -rv --progress ~/mycar/models/ piracer@<your_pi_ip_address>:~/mycar/models/
 
 ### 🚗 Auto-Driving
