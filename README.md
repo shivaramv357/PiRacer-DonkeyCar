@@ -92,11 +92,6 @@ For more details, refer to the Auto-Driving section in the official documentatio
 
 ## 🚗 PiRacer Setup
 
-
-## 🚀 Future Improvements
-- Better recovery stability
-- Reduced oscillations
-
 ## 🔗 Reference
 This project is built using the PiRacer AI Kit:
 https://www.waveshare.com/wiki/PiRacer_AI_Kit
