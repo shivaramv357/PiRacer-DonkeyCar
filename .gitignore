@@ -1,0 +1,18 @@
+# DonkeyCar data (DO NOT TRACK)
+data*
+logs/
+
+# Models (large files)
+models/*.h5
+models/*.tflite
+
+# DonkeyCar internals
+*.catalog
+*.json
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
