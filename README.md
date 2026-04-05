@@ -27,3 +27,6 @@ This project focuses on improving autonomous driving performance using multi-dat
 ## 🚀 Future Improvements
 - Better recovery stability
 - Reduced oscillations
+
+## 🔗 Reference
+- [PiRacer AI Kit Documentation](https://www.waveshare.com/wiki/PiRacer_AI_Kit)
