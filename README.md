@@ -1,6 +1,6 @@
 # PiRacer DonkeyCar 🚗
 
-Autonomous racing car using Raspberry Pi 5 and DonkeyCar framework.
+End-to-end autonomous driving system using Raspberry Pi 5 and DonkeyCar, trained with multi-dataset learning for improved lane following, turning, and recovery behavior.
 
 ## 🧠 Project Overview
 This project focuses on improving autonomous driving performance using multi-dataset training:
