@@ -71,6 +71,7 @@ For more details, refer to the Calibration section in the official documentation
 
 ### 🚗 Auto-Driving
 - Run the following command on the Raspberry Pi:
+
       cd mycar/
       python manage.py drive --model ~/mycar/models/mypilot.h5
 
