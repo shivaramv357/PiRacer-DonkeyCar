@@ -50,11 +50,16 @@ For more details, refer to the Web Controller section in the official DonkeyCar 
 
 ### ⚙️ Calibration
 To calibrate steering and throttle:
-    - Adjust PWM values to ensure the servo is centered and can turn fully left and right.
-    - Modify the following parameters in config.py:
+
+  - Adjust PWM values to ensure the servo is centered and can turn fully left and right.
+    
+  - Modify the following parameters in config.py:
+    
           STEERING_LEFT_PWM
           STEERING_RIGHT_PWM
-    - Adjust throttle limits:
+          
+  - Adjust throttle limits:
+    
           JOYSTICK_MAX_THROTTLE
           AI_THROTTLE_MULT
           
