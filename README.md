@@ -24,8 +24,9 @@ The system uses deep learning to predict steering and throttle values from camer
 
 ## 📊 Results
 - Stable lane following achieved
-- Improved recovery behavior after adding recovery dataset
-- Final validation loss: ~0.078 
+- Baseline model (center-only): unstable at turns
+- Multi-dataset model: improved turning and recovery
+- Final validation loss: ~0.078
 
 ## ⚙️ Hardware
 - Raspberry Pi 5
