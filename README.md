@@ -36,10 +36,14 @@ The system uses deep learning to predict steering and throttle values from camer
 
 ### 🌐 Web Control
 - Open the terminal on the Raspberry Pi and run:
+  
       cd mycar/
       python manage.py drive
+  
 - Then open a browser on your host PC and navigate to:
+  
       http://<raspberry_pi_ip_address>:8887
+  
   You can use any browser (Chrome, Safari, etc.).
 
 For more details, refer to the Web Controller section in the official DonkeyCar documentation.
@@ -59,15 +63,15 @@ For more details, refer to the Calibration section in the official documentation
 ### 🏋️ Data Transfer & Training
 - Transfer dataset from PiRacer to Mac:
 
-    rsync -rv --progress --partial piracer@<your_pi_ip_address>:~/mycar/data/ ~/mycar/data/
+          rsync -rv --progress --partial piracer@<your_pi_ip_address>:~/mycar/data/ ~/mycar/data/
   
 - Train the model:
   
-    python train.py --tub <tub_folder_names_comma_separated> --model models/mypilot.h5
+          python train.py --tub <tub_folder_names_comma_separated> --model models/mypilot.h5
   
 - Transfer trained model back to PiRacer:
   
-    rsync -rv --progress ~/mycar/models/ piracer@<your_pi_ip_address>:~/mycar/models/
+          rsync -rv --progress ~/mycar/models/ piracer@<your_pi_ip_address>:~/mycar/models/
 
 ### 🚗 Auto-Driving
 - Run the following command on the Raspberry Pi:
