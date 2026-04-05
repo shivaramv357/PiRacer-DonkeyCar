@@ -78,6 +78,8 @@ For more details, refer to the Calibration section in the official documentation
   
           rsync -rv --progress ~/mycar/models/ piracer@<your_pi_ip_address>:~/mycar/models/
 
+For more details, refer to the Train Data section in the official documentation.
+
 ### 🚗 Auto-Driving
 - Run the following command on the Raspberry Pi:
 
