@@ -19,6 +19,10 @@ This project focuses on improving autonomous driving performance using multi-dat
 - Validation Loss: ~0.078
 - Multi-dataset training used
 
+## 📊 Results
+- Stable lane following achieved
+- Improved recovery behavior after adding recovery dataset
+
 ## ⚙️ Hardware
 - Raspberry Pi 5
 - PiCamera
