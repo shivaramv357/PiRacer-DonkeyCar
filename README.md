@@ -26,6 +26,7 @@ The system uses deep learning to predict steering and throttle values from camer
 - Stable lane following achieved
 - Baseline model (center-only): unstable at turns
 - Multi-dataset model: improved turning and recovery
+- Multi-dataset training significantly improved robustness, particularly in turns and recovery scenarios, compared to single-dataset training.
 - Final validation loss: ~0.078
 
 ## ⚙️ Hardware
