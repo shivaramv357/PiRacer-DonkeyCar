@@ -46,7 +46,7 @@ The system uses deep learning to predict steering and throttle values from camer
   
   You can use any browser (Chrome, Safari, etc.).
 
-For more details, refer to the Web Controller section in the official DonkeyCar documentation.
+For more details, refer to the Web Controller section in the official documentation.
 
 ### ⚙️ Calibration
 To calibrate steering and throttle:
@@ -83,6 +83,8 @@ For more details, refer to the Calibration section in the official documentation
 
       cd mycar/
       python manage.py drive --model ~/mycar/models/mypilot.h5
+
+For more details, refer to the Auto-Driving section in the official documentation.
 
 ## 🏁 Track Setup
 
