@@ -30,3 +30,5 @@ This project focuses on improving autonomous driving performance using multi-dat
 
 ## 🔗 Reference
 - [PiRacer AI Kit Documentation](https://www.waveshare.com/wiki/PiRacer_AI_Kit)
+This project is built using the PiRacer AI Kit:
+https://www.waveshare.com/wiki/PiRacer_AI_Kit
