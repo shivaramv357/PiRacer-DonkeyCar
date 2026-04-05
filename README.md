@@ -1,12 +1,16 @@
 # PiRacer DonkeyCar 🚗
 
-End-to-end autonomous driving system using Raspberry Pi 5 and DonkeyCar, trained with multi-dataset learning for improved lane following, turning, and recovery behavior.
+End-to-end autonomous driving system using Raspberry Pi 5 and the DonkeyCar framework.  
+This project focuses on improving driving performance using multi-dataset training for lane following, turning, and recovery.
 
 ## 🧠 Project Overview
-This project focuses on improving autonomous driving performance using multi-dataset training:
-- Lane following
-- Turn handling
-- Recovery from off-track situations
+This project implements an autonomous racing car capable of:
+
+- Lane following on a custom indoor track  
+- Handling sharp turns  
+- Recovering from off-track situations  
+
+The system uses deep learning to predict steering and throttle values from camera input.
 
 ## 📂 Dataset Strategy
 - `data_center` → normal driving
@@ -16,17 +20,59 @@ This project focuses on improving autonomous driving performance using multi-dat
 ## 🏋️ Training
 - Model: Keras Linear
 - Epochs: ~59
-- Validation Loss: ~0.078
 - Multi-dataset training used
 
 ## 📊 Results
 - Stable lane following achieved
 - Improved recovery behavior after adding recovery dataset
+- Final validation loss: ~0.078 
 
 ## ⚙️ Hardware
 - Raspberry Pi 5
 - PiCamera
 - PiRacer chassis
+
+## ▶️ How to Run
+
+### 🌐 Web Control
+- Open the terminal on the Raspberry Pi and run:
+      cd mycar/
+      python manage.py drive
+- Then open a browser on your host PC and navigate to:
+      http://<raspberry_pi_ip_address>:8887
+  You can use any browser (Chrome, Safari, etc.).
+
+For more details, refer to the Web Controller section in the official DonkeyCar documentation.
+
+### ⚙️ Calibration
+To calibrate steering and throttle:
+    - Adjust PWM values to ensure the servo is centered and can turn fully left and right.
+    - Modify the following parameters in config.py:
+          STEERING_LEFT_PWM
+          STEERING_RIGHT_PWM
+    - Adjust throttle limits:
+          JOYSTICK_MAX_THROTTLE
+          AI_THROTTLE_MULT
+          
+For more details, refer to the Calibration section in the official documentation.
+      
+### 🏋️ Data Transfer & Training
+- Transfer dataset from PiRacer to Mac:
+    rsync -rv --progress --partial piracer@<your_pi_ip_address>:~/mycar/data/ ~/mycar/data/
+- Train the model:
+    python train.py --tub <tub_folder_names_comma_separated> --model models/mypilot.h5
+- Transfer trained model back to PiRacer:
+    rsync -rv --progress ~/mycar/models/ piracer@<your_pi_ip_address>:~/mycar/models/
+
+### 🚗 Auto-Driving
+- Run the following command on the Raspberry Pi:
+      cd mycar/
+      python manage.py drive --model ~/mycar/models/mypilot.h5
+
+## 🏁 Track Setup
+
+## 🚗 PiRacer Setup
+
 
 ## 🚀 Future Improvements
 - Better recovery stability
