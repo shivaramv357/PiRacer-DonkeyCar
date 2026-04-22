@@ -91,7 +91,7 @@ For more details, refer to the Train Data section in the official documentation.
 For more details, refer to the Auto-Driving section in the official documentation.
 
 ## 🏁 Track Setup
-
+![Track](images/Track.jpeg)
 ## 🚗 PiRacer Setup
 
 ## 🔗 Reference
