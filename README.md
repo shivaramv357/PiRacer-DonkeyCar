@@ -95,7 +95,7 @@ For more details, refer to the Auto-Driving section in the official documentatio
 ## 🚗 PiRacer Setup
 ![Car](images/piracer-ai-kit-3.jpg)
 ## 🎥 Autonomous Driving Demo
-[![Watch Demo](https://www.youtube.com/watch?v=GKAPhYXc6sQ)
+[![Watch Demo](https://img.youtube.com/vi/GKAPhYXc6sQ/0.jpg)](https://www.youtube.com/watch?v=GKAPhYXc6sQ)
 
 ## 🔗 Reference
 This project is built using the PiRacer AI Kit:
