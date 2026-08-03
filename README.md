@@ -164,6 +164,11 @@ https://www.waveshare.com/piracer-ai-kit.htm?srsltid=AfmBOooFl-figGmJj0APjOT1UAl
 
 ---
 
+Official Documentation:
+https://www.waveshare.com/wiki/PiRacer_AI_Kit
+
+---
+
 ## Project Context
 
 This project was completed independently under the guidance of a professor at **Westsächsische Hochschule Zwickau (WHZ)**.
@@ -171,6 +176,3 @@ This project was completed independently under the guidance of a professor at **
 I selected the PiRacer autonomous driving project based on my interest in autonomous driving. The project focused on implementing and evaluating an end-to-end autonomous driving system using the DonkeyCar framework on a Raspberry Pi 5–based PiRacer platform.
 
 ---
-
-Official Documentation:
-https://www.waveshare.com/wiki/PiRacer_AI_Kit
