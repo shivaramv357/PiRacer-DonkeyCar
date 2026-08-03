@@ -1,9 +1,9 @@
-# PiRacer DonkeyCar 🚗
+# Deep Learning-Based Autonomous Racing Robot (PiRacer)
 
 End-to-end autonomous driving system using Raspberry Pi 5 and the DonkeyCar framework.  
 This project focuses on improving driving performance using multi-dataset training for lane following, turning, and recovery.
 
-## 🧠 Project Overview
+## Project Overview
 This project implements an autonomous racing car capable of:
 
 - Lane following on a custom indoor track  
@@ -12,31 +12,88 @@ This project implements an autonomous racing car capable of:
 
 The system uses deep learning to predict steering and throttle values from camera input.
 
-## 📂 Dataset Strategy
-- `data_center` → normal driving
-- `data_turns` → sharp turns
-- `data_recovery` → recovery from deviations
+---
 
-## 🏋️ Training
+## My Contribution
+
+My contributions to this project included:
+
+- Collecting and organizing multiple driving datasets for autonomous navigation
+- Training and evaluating deep learning models using the DonkeyCar framework
+- Optimizing lane-following, turning, and recovery performance through multi-dataset training
+- Deploying trained models to the Raspberry Pi 5 for real-time autonomous driving
+- Evaluating autonomous driving performance on an indoor racing track,
+
+---
+
+## Technologies Used
+
+| Technology | Purpose |
+|------------|---------|
+| Raspberry Pi 5 | Embedded computing platform |
+| PiCamera | Image acquisition |
+| DonkeyCar | Autonomous driving framework |
+| TensorFlow / Keras | Deep learning model training |
+| Python | Development |
+| Linux | Operating system |
+
+---
+
+## Dataset Strategy
+
+Three datasets were collected to improve driving robustness:
+
+- **data_center** – Normal lane-following
+- **data_turns** – Sharp turning scenarios
+- **data_recovery** – Recovery after leaving the track
+
+The datasets were combined to train a more robust end-to-end driving model.
+
+---
+
+## Training
+
+- Framework: DonkeyCar
 - Model: Keras Linear
-- Epochs: ~59
-- Multi-dataset training used
+- Training Epochs: 59
+- Training Strategy: Multi-dataset training
 
-## 📊 Results
-- Stable lane following achieved
-- Baseline model (center-only): unstable at turns
-- Multi-dataset model: improved turning and recovery
-- Multi-dataset training significantly improved robustness, particularly in turns and recovery scenarios, compared to single-dataset training.
-- Final validation loss: ~0.078
+---
 
-## ⚙️ Hardware
+## Results
+
+Compared with a model trained only on center-lane data, the multi-dataset model demonstrated:
+
+- Improved lane-following stability
+- Better performance during sharp turns
+- Improved recovery after leaving the track
+- Increased overall driving robustness
+
+**Final validation loss:** ~0.078
+
+---
+
+## Hardware
 - Raspberry Pi 5
 - PiCamera
 - PiRacer chassis
 
-## ▶️ How to Run
+---
 
-### 🌐 Web Control
+## Repository Structure
+
+```text
+.
+├── images/
+│   ├── Track.jpeg
+│   └── piracer-ai-kit-3.jpg
+└── README.md
+```
+---
+
+## How to Run
+
+### Web Control
 - Open the terminal on the Raspberry Pi and run:
   
       cd mycar/
@@ -50,7 +107,7 @@ The system uses deep learning to predict steering and throttle values from camer
 
 For more details, refer to the Web Controller section in the official documentation.
 
-### ⚙️ Calibration
+### Calibration
 To calibrate steering and throttle:
 
   - Adjust PWM values to ensure the servo is centered and can turn fully left and right.
@@ -67,7 +124,7 @@ To calibrate steering and throttle:
           
 For more details, refer to the Calibration section in the official documentation.
       
-### 🏋️ Data Transfer & Training
+### Data Transfer & Training
 - Transfer dataset from PiRacer to Mac:
 
           rsync -rv --progress --partial piracer@<your_pi_ip_address>:~/mycar/data/ ~/mycar/data/
@@ -82,7 +139,7 @@ For more details, refer to the Calibration section in the official documentation
 
 For more details, refer to the Train Data section in the official documentation.
 
-### 🚗 Auto-Driving
+### Auto-Driving
 - Run the following command on the Raspberry Pi:
 
       cd mycar/
@@ -90,16 +147,22 @@ For more details, refer to the Train Data section in the official documentation.
 
 For more details, refer to the Auto-Driving section in the official documentation.
 
-## 🏁 Track Setup
+---
+
+## Track Setup
 ![Track](images/Track.jpeg)
-## 🚗 PiRacer Setup
+## PiRacer Setup
 ![Car](images/piracer-ai-kit-3.jpg)
-## 🎥 Autonomous Driving Demo
+## Autonomous Driving Demo
 [![Watch Demo](https://img.youtube.com/vi/GKAPhYXc6sQ/0.jpg)](https://www.youtube.com/watch?v=GKAPhYXc6sQ)
 
-## 🔗 Reference
+---
+
+## Reference
 This project is built using the PiRacer AI Kit:
 https://www.waveshare.com/piracer-ai-kit.htm?srsltid=AfmBOooFl-figGmJj0APjOT1UAlSDXt8R6RpcYDY11cMDYjBhc17iLQ4
+
+---
 
 Official Documentation:
 https://www.waveshare.com/wiki/PiRacer_AI_Kit
