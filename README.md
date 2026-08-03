@@ -18,11 +18,11 @@ The system uses deep learning to predict steering and throttle values from camer
 
 My contributions to this project included:
 
-- Collecting and organizing multiple driving datasets for autonomous navigation
+- Setting up the PiRacer hardware and Raspberry Pi 5 environment
+- Collecting and organizing multiple driving datasets
 - Training and evaluating deep learning models using the DonkeyCar framework
-- Optimizing lane-following, turning, and recovery performance through multi-dataset training
-- Deploying trained models to the Raspberry Pi 5 for real-time autonomous driving
-- Evaluating autonomous driving performance on an indoor racing track,
+- Improving autonomous driving performance through multi-dataset training
+- Deploying and validating the trained model on the PiRacer platform
 
 ---
 
@@ -161,6 +161,14 @@ For more details, refer to the Auto-Driving section in the official documentatio
 ## Reference
 This project is built using the PiRacer AI Kit:
 https://www.waveshare.com/piracer-ai-kit.htm?srsltid=AfmBOooFl-figGmJj0APjOT1UAlSDXt8R6RpcYDY11cMDYjBhc17iLQ4
+
+---
+
+## Project Context
+
+This project was completed independently under the guidance of a professor at **Westsächsische Hochschule Zwickau (WHZ)**.
+
+I selected the PiRacer autonomous driving project based on my interest in autonomous driving. The project focused on implementing and evaluating an end-to-end autonomous driving system using the DonkeyCar framework on a Raspberry Pi 5–based PiRacer platform.
 
 ---
 
