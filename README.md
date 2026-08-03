@@ -14,6 +14,14 @@ The system uses deep learning to predict steering and throttle values from camer
 
 ---
 
+## Project Context
+
+This project was completed independently under the guidance of a professor at **Westsächsische Hochschule Zwickau (WHZ)**.
+
+I selected the PiRacer autonomous driving project based on my interest in autonomous driving. The project focused on implementing and evaluating an end-to-end autonomous driving system using the DonkeyCar framework on a Raspberry Pi 5–based PiRacer platform.
+
+---
+
 ## My Contribution
 
 My contributions to this project included:
@@ -23,6 +31,18 @@ My contributions to this project included:
 - Training and evaluating deep learning models using the DonkeyCar framework
 - Improving autonomous driving performance through multi-dataset training
 - Deploying and validating the trained model on the PiRacer platform
+
+---
+
+## Features
+
+- End-to-end autonomous driving using the DonkeyCar framework
+- Deep learning-based steering and throttle prediction
+- Multi-dataset model training
+- Autonomous lane following
+- Turn handling
+- Recovery from off-track situations
+- Real-time inference on Raspberry Pi 5
 
 ---
 
@@ -74,9 +94,28 @@ Compared with a model trained only on center-lane data, the multi-dataset model 
 ---
 
 ## Hardware
-- Raspberry Pi 5
-- PiCamera
-- PiRacer chassis
+
+| Hardware | Purpose |
+|----------|---------|
+| Raspberry Pi 5 | Embedded computing platform |
+| PiCamera | Image acquisition |
+| PiRacer chassis | Autonomous racing platform |
+
+---
+
+## Running the Project
+
+The project is executed using the DonkeyCar framework on a Raspberry Pi 5.
+
+Typical workflow:
+
+1. Launch the DonkeyCar web interface.
+2. Collect driving data.
+3. Train the deep learning model.
+4. Deploy the trained model to the PiRacer.
+5. Execute autonomous driving using the trained model.
+
+Detailed setup instructions are available in the official DonkeyCar and PiRacer documentation.
 
 ---
 
@@ -169,10 +208,8 @@ https://www.waveshare.com/wiki/PiRacer_AI_Kit
 
 ---
 
-## Project Context
+## References
 
-This project was completed independently under the guidance of a professor at **Westsächsische Hochschule Zwickau (WHZ)**.
-
-I selected the PiRacer autonomous driving project based on my interest in autonomous driving. The project focused on implementing and evaluating an end-to-end autonomous driving system using the DonkeyCar framework on a Raspberry Pi 5–based PiRacer platform.
-
----
+- PiRacer AI Kit: https://www.waveshare.com/piracer-ai-kit.htm
+- PiRacer AI Kit Documentation: https://www.waveshare.com/wiki/PiRacer_AI_Kit
+- DonkeyCar Documentation: https://docs.donkeycar.com/
