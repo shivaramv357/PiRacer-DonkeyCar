@@ -54,8 +54,8 @@ My contributions to this project included:
 | PiCamera | Image acquisition |
 | DonkeyCar | Autonomous driving framework |
 | TensorFlow / Keras | Deep learning model training |
-| Python | Development |
-| Linux | Operating system |
+| Python | Model training and deployment |
+| Linux | Embedded operating system |
 
 ---
 
@@ -103,6 +103,30 @@ Compared with a model trained only on center-lane data, the multi-dataset model 
 
 ---
 
+## Experimental Track
+
+![Track](images/Track.jpeg)
+
+**Figure 1:** Indoor track used for autonomous driving experiments.
+
+---
+
+## PiRacer Platform
+
+![Car](images/piracer-ai-kit-3.jpg)
+
+**Figure 2:** Raspberry Pi 5–based PiRacer autonomous racing platform.
+
+---
+
+## Autonomous Driving Demo
+
+[![Watch Demo](https://img.youtube.com/vi/GKAPhYXc6sQ/0.jpg)](https://www.youtube.com/watch?v=GKAPhYXc6sQ)
+
+**Video 1:** Demonstration of autonomous lane following using the trained deep learning model.
+
+---
+
 ## Running the Project
 
 The project is executed using the DonkeyCar framework on a Raspberry Pi 5.
@@ -128,73 +152,6 @@ Detailed setup instructions are available in the official DonkeyCar and PiRacer 
 │   └── piracer-ai-kit-3.jpg
 └── README.md
 ```
----
-
-## How to Run
-
-### Web Control
-- Open the terminal on the Raspberry Pi and run:
-  
-      cd mycar/
-      python manage.py drive
-  
-- Then open a browser on your host PC and navigate to:
-  
-      http://<raspberry_pi_ip_address>:8887
-  
-  You can use any browser (Chrome, Safari, etc.).
-
-For more details, refer to the Web Controller section in the official documentation.
-
-### Calibration
-To calibrate steering and throttle:
-
-  - Adjust PWM values to ensure the servo is centered and can turn fully left and right.
-    
-  - Modify the following parameters in config.py:
-    
-          STEERING_LEFT_PWM
-          STEERING_RIGHT_PWM
-          
-  - Adjust throttle limits:
-    
-          JOYSTICK_MAX_THROTTLE
-          AI_THROTTLE_MULT
-          
-For more details, refer to the Calibration section in the official documentation.
-      
-### Data Transfer & Training
-- Transfer dataset from PiRacer to Mac:
-
-          rsync -rv --progress --partial piracer@<your_pi_ip_address>:~/mycar/data/ ~/mycar/data/
-  
-- Train the model:
-  
-          python train.py --tub <tub_folder_names_comma_separated> --model models/mypilot.h5
-  
-- Transfer trained model back to PiRacer:
-  
-          rsync -rv --progress ~/mycar/models/ piracer@<your_pi_ip_address>:~/mycar/models/
-
-For more details, refer to the Train Data section in the official documentation.
-
-### Auto-Driving
-- Run the following command on the Raspberry Pi:
-
-      cd mycar/
-      python manage.py drive --model ~/mycar/models/mypilot.h5
-
-For more details, refer to the Auto-Driving section in the official documentation.
-
----
-
-## Track Setup
-![Track](images/Track.jpeg)
-## PiRacer Setup
-![Car](images/piracer-ai-kit-3.jpg)
-## Autonomous Driving Demo
-[![Watch Demo](https://img.youtube.com/vi/GKAPhYXc6sQ/0.jpg)](https://www.youtube.com/watch?v=GKAPhYXc6sQ)
-
 ---
 
 ## References
